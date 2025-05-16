@@ -5,12 +5,14 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "inter", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /***********************/
@@ -153,6 +155,7 @@ body {
   background-color: #fcf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 .logo {
   height: 2.4rem;
@@ -192,6 +195,7 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+
 /***********************/
 /* MOBILE NAV STYLES */
 /***********************/
@@ -204,6 +208,10 @@ body {
   border: none;
   background: none;
   cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
 }
 
 /***********************/
