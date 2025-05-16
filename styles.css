@@ -165,7 +165,7 @@ body {
 .main-nav-list {
   display: flex;
   list-style: none;
-  gap: 3.2rem;
+  gap: 4.2rem;
   align-items: center;
 }
 .main-nav-link:link,
@@ -192,6 +192,20 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+/***********************/
+/* MOBILE NAV STYLES */
+/***********************/
+.mobile-nav-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 /***********************/
 /* HERO SECTION STYLES */
 /***********************/
@@ -395,6 +409,7 @@ body {
   align-items: center;
   font-size: 1.8rem;
   gap: 1.6rem;
+  line-height: 1.2rem;
 }
 .list-icon {
   width: 3rem;
@@ -473,7 +488,7 @@ body {
 }
 .pricing--plan-starter {
   justify-self: end;
-  border: 3px solid #fcf2e9;
+  border: 2px solid #fcf2e9;
 }
 .pricing--plan-complete {
   background-color: #fcf2e9;
