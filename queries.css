@@ -174,7 +174,7 @@
 }
 
 /****************/
-/*****BELOW 544px*****/
+/*****BELOW 544px (mobile)*****/
 /****************/
 @media (max-width: 39em) {
   .grid--2-cols,
@@ -202,6 +202,8 @@
   }
   .logos img {
     height: 1.2em;
+    filter: brightness(-50%);
+    opacity: 50%;
   }
   .step-img-box:nth-child(2) {
     grid-row: 1;
@@ -211,6 +213,9 @@
   }
   .step-img-box {
     transform: translateY(3.2em);
+  }
+  .step-description {
+    margin-bottom: 2.4em;
   }
   .meal:nth-child(1) {
     margin-bottom: 3.2em;
@@ -252,5 +257,8 @@
   }
   .cta-text-box {
     padding: 3.2em;
+  }
+  .section-how {
+    padding: 0 3.2em;
   }
 }
