@@ -16,6 +16,7 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script defer src="/script.js"></script>
   </head>
   <body>
@@ -31,32 +32,29 @@
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#section1">How it works</a></li>
-          <li><a class="main-nav-link" href="#section2">Meals</a></li>
-          <li><a class="main-nav-link" href="#section3">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#section4">Pricing</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#pricing">Plans</a></li>
           <li>
-            <a class="main-nav-link nav-cta" href="#section5">Try now!</a>
+            <a class="main-nav-link nav-cta" href="#cta">Try now!</a>
           </li>
         </ul>
       </nav>
-      <div class="btn-mobile">
+      
         <button class="btn-mobile-nav">
-          
           <ion-icon
           class="mobile-nav-icon"
           name="close-outline"
           ></ion-icon
           >
-        </button>
-        <button class="btn-mobile-nav">
           <ion-icon
           class="mobile-nav-icon"
           name="menu-outline"
           ></ion-icon
           >
         </button>
-      </div>
+      
     </header>
     <main>
       <section class="section-hero">
@@ -70,10 +68,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">See our plans &darr;</a>
+            <a href="#pricing" class="btn btn--outline">See our plans &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img
@@ -136,9 +134,9 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
-          <span class="subheading">How it works</span>
+          <span class="subheading" >How it works</span>
           <h2 class="heading-secondary">
             Your daily dose of health in 3 simple steps
           </h2>
@@ -204,7 +202,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheading">Our meals</span>
           <h2 class="heading-secondary margin-bottom-md">
@@ -321,7 +319,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials ">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonial-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary margin-bottom-md">
@@ -482,7 +480,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Our Pricing Plans</span>
           <h2 class="heading-secondary">Eating well without breaking the bank</h2>
@@ -553,7 +551,7 @@
           <div class="container grid">
             <aside class="plan-details"> <sup>*</sup> Prices include all applicable taxes. You can cancel at any time.</aside>
           </div>
-        <div class="container grid grid--4-cols">
+        <div class="container grid grid--4-cols" id="more">
           <div class="feature">
             <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
             <p class="feature-title">Never cook again!</p>
@@ -576,7 +574,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
