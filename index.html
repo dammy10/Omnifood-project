@@ -2,8 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Omnifood - A healthy meal delivered to your door, every single day" />
+    <meta name="keywords" content="omnifood, food delivery, healthy meals, meal subscription" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omnifood</title>
+    <link rel="shortcut icon" href="/img/favicon_2.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-favicon.png"/>
+<link rel="manifest" href="manifest.webmanifest"/>
+    <title>Omnifood&colon; A healthy meal delivered to your door, every single day</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +21,7 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+   
     <script defer src="/script.js"></script>
   </head>
   <body>
@@ -106,11 +111,22 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="/img/hero.png"
+            <picture>
+              <source
+                srcset="/img/hero.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="/img/hero_2.png"
+                type="image/png"
+              />
+              <img
+              src="/img/hero.webp"
               class="hero-img"
               alt="a woman enjoying a healthy meal, meals in storage container and food bowl on the table"
             />
+            </picture>
+            
           </div>
         </div>
       </section>
